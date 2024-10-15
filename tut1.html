@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black bg-opacity-10">
+    <h1 class="text-3xl font-bold underline text-white text-8xl bg-cyan-500 bg-opacity-50 m-2 p-2">
+        Hello world! <br>bg-cyan-900(50-900)
+    </h1>
+
+
+    <div class="p-6 bg-gray-100"></div>
+    <!-- Outer Ordered List -->
+    <ol class="list-decimal pl-6 space-y-2">
+        <li class="text-gray-800">bg-black and bg-yellow-344
+            why black not required opacity in tailwind css
+            <!-- Nested Ordered List -->
+            <ol class="list-decimal pl-6 space-y-1">
+                <li class="text-gray-600">In Tailwind CSS, different background colors have varying default opacities
+                    based on how they are
+                    defined in CSS.
+
+                    Black (bg-black): Black is a solid color in CSS, represented as #000000, and it doesn't require any
+                    additional
+                    opacity settings because it is fully opaque by default. It displays as pure black, with no
+                    transparency.
+
+                    Yellow (bg-yellow-500): In contrast, yellow or any other color in Tailwind might require opacity if
+                    you want to
+                    control transparency. Tailwind CSS provides utilities like bg-opacity-{amount} to adjust the opacity
+                    of a background
+                    color. For example, bg-opacity-50 would set the background color to be 50% transparent. However, by
+                    default, colors
+                    like yellow are fully opaque, just like black.
+
+                    If you want to add opacity to bg-black, you can also do so by using classes like bg-opacity-50 to
+                    make the black
+                    color semi-transparent.
+
+                    If you are referring to a custom color like bg-yellow-344, that would need to be defined in your
+                    Tailwind
+                    configuration file, as Tailwind doesn't have a built-in yellow color with that specific name. Would
+                    you like
+                    guidance on how to define custom colors in Tailwind?</li>
+                <!-- <li class="text-gray-600">Sub Item 2</li> -->
+                <li class="text-gray-600"> what amount range
+                    <!-- Nested list inside another sublist -->
+                    <ol class="list-decimal pl-6 space-y-1">
+                        <li class="text-gray-500"> In Tailwind CSS, the opacity values for the bg-opacity utility class
+                            range from 0 to 100,
+                            representing percentages of opacity. The available values are:
+
+                            bg-opacity-0: Fully transparent (0% opacity)
+                            bg-opacity-5: 5% opacity
+                            bg-opacity-10: 10% opacity
+                            bg-opacity-20: 20% opacity
+                            bg-opacity-25: 25% opacity
+                            bg-opacity-30: 30% opacity
+                            bg-opacity-40: 40% opacity
+                            bg-opacity-50: 50% opacity
+                            bg-opacity-60: 60% opacity
+                            bg-opacity-70: 70% opacity
+                            bg-opacity-75: 75% opacity
+                            bg-opacity-80: 80% opacity
+                            bg-opacity-90: 90% opacity
+                            bg-opacity-95: 95% opacity
+                            bg-opacity-100: Fully opaque (100% opacity)
+                            These values allow you to easily adjust the transparency of any background color by adding
+                            the
+                            corresponding class, such as bg-opacity-50 for 50% opacity.</li>
+                        <li class="text-gray-500">Nested Sub Item B</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li class="text-gray-800">p-
+            <!-- Another Nested Ordered List -->
+            <ol class="list-decimal pl-6 space-y-1">
+                <li class="text-gray-600">The p- utility in Tailwind CSS stands for padding, and it controls the padding
+                    inside an element. Tailwind provides various shorthand classes to apply padding to all sides or
+                    specific sides (top, right, bottom, left). Here's a breakdown of how to use it:
+
+                    Padding All Sides (p-{amount})
+                    To apply equal padding to all sides of an element:
+
+                    p-0: No padding
+                    p-1: 0.25rem (4px)
+                    p-2: 0.5rem (8px)
+                    p-3: 0.75rem (12px)
+                    p-4: 1rem (16px)
+                    p-5: 1.25rem (20px)
+                    p-6: 1.5rem (24px)
+                    p-8: 2rem (32px)
+                    p-10: 2.5rem (40px)</li>
+                <li class="text-gray-600">Example:
+                    <div class="p-4 bg-gray-200">
+                        This div has padding of 1rem (16px) on all sides.
+                    </div>
+
+
+                </li>
+                <li class="text-gray-600">Padding Specific Sides
+
+                    <!-- Nested list inside another sublist -->
+                    <ol class="list-decimal pl-6 space-y-1">
+                        <li class="text-gray-500">You can also control padding on specific sides:
+
+                            pt-{amount}: Padding-top
+                            pr-{amount}: Padding-right
+                            pb-{amount}: Padding-bottom
+                            pl-{amount}: Padding-left
+                            px-{amount}: Padding left and right (horizontal padding)
+                            py-{amount}: Padding top and bottom (vertical padding)
+
+                        </li>
+
+                        <li class="text-gray-500"> Example with specific sides:
+                            <div class="pt-4 pr-2 pb-6 pl-3 bg-gray-100">
+                                This div has custom padding on each side.
+                            </div>
+                        </li>
+                        <li class="text-gray-500"> Example with specific sides:
+                            <div class="pt-4 pr-2 pb-6 pl-3 bg-gray-100">
+                                This div has custom padding on each side.
+                            </div>
+                        </li>
+
+                        <li class="text-gray-500"> Or for horizontal/vertical:
+
+                            html
+                            Copy code
+                            <div class="px-4 py-2 bg-blue-200">
+                                This div has horizontal padding of 1rem (16px) and vertical padding of 0.5rem (8px).
+                            </div>
+                            The p- classes are helpful for controlling spacing in layouts.
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li class="text-gray-800">Third Item</li>
+    </ol>
+    </div>
+
+
+
+
+    <button class="text-white bg-blue-400 p-2 m-2 rounded hover:bg-blue-900 text-2xl">submit</button>
+
+    Quiz 1)What is the core principle behind Tailwind CSS?
+    Quiz 1 Answer: The core principle behind Tailwind CSS is utility-first CSS. Instead of writing custom styles or
+    relying on predefined components, Tailwind provides low-level utility classes for quickly building custom designs
+    directly in the HTML. These utility classes control individual CSS properties like padding, margin, colors, and
+    more, allowing developers to create responsive, scalable, and maintainable user interfaces without writing custom
+    CSS files.
+
+    <p class="bg-red-600 pt-2 pb-2 px-2">
+    <div class="bg-red-400 p-1">Prompt 1 :create ol and with li contains more ol and li in taild wind css with dummy
+        data</div>
+    <div class="bg-red-200 p-1">Explanation:
+        pl-6: Adds padding to the left to indent the nested list.
+        space-y-2: Adds vertical space between list items in the outer list.
+        space-y-1: Adds vertical space between list items in the nested lists.
+        list-decimal: Displays the list with decimal numbers (1., 2., 3., etc.).
+        text-gray-*: Tailwind color utility classes for different shades of gray text.
+        This structure allows you to nest lists and easily style them using Tailwind CSS utilities.</div>
+    <div class="p-6 bg-gray-100">
+        <!-- Outer Ordered List -->
+        <ol class="list-decimal pl-6 space-y-2">
+            <li class="text-gray-800">First Item
+                <!-- Nested Ordered List -->
+                <ol class="list-decimal pl-6 space-y-1">
+                    <li class="text-gray-600">Sub Item 1</li>
+                    <li class="text-gray-600">Sub Item 2</li>
+                    <li class="text-gray-600">Sub Item 3</li>
+                </ol>
+            </li>
+            <li class="text-gray-800">Second Item
+                <!-- Another Nested Ordered List -->
+                <ol class="list-decimal pl-6 space-y-1">
+                    <li class="text-gray-600">Sub Item 1</li>
+                    <li class="text-gray-600">Sub Item 2</li>
+                    <li class="text-gray-600">Sub Item 3
+                        <!-- Nested list inside another sublist -->
+                        <ol class="list-decimal pl-6 space-y-1">
+                            <li class="text-gray-500">Nested Sub Item A</li>
+                            <li class="text-gray-500">Nested Sub Item B</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li class="text-gray-800">Third Item</li>
+        </ol>
+    </div>
+    </p>
+
+</body>
+
+</html>

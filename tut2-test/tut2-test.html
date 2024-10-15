@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut2</title>
+    <link rel="stylesheet" href="output.css">
+
+</head>
+
+<body>
+    <div class="p-6 bg-gray-100"></div>
+    <!-- Outer Ordered List -->
+    <ol class="list-decimal pl-6 space-y-2">
+        <li class="text-gray-800">npm install -D tailwindcss
+            <!-- Another Nested Ordered List -->
+            <ol class="list-decimal pl-6 space-y-1 rounded">
+                <li class="text-gray-600">Running the command npm install -D tailwindcss installs Tailwind CSS as a
+                    development dependency in your project. Here's a step-by-step guide on how to set up Tailwind CSS
+                    after running this command:
+                    <!-- Nested list inside another sublist -->
+                    <ol class="list-decimal pl-6 space-y-1">
+                        <li class="text-gray-500">1. Install Tailwind CSS:
+                            Run the following command in your project’s root directory to install Tailwind CSS:
+
+                            bash
+                            Copy code
+                            npm install -D tailwindcss
+                            The -D flag stands for --save-dev, which installs Tailwind CSS as a development dependency.
+                            This means Tailwind will only be used during the development and build process and not in
+                            the production runtime.</li>
+                        <li class="text-gray-500">2. Initialize Tailwind Configuration:
+                            After installing Tailwind CSS, initialize a default configuration file by running:
+
+                            bash
+                            Copy code
+                            npx tailwindcss init
+                            This will create a tailwind.config.js file in your project root, where you can customize
+                            Tailwind's configuration, such as extending the default theme, adding custom colors, or
+                            enabling purging unused CSS in production.</li>
+
+                        <li class="text-gray-500">3. Set Up Tailwind in Your CSS:
+                            Create a CSS file (e.g., styles.css), and import the following Tailwind directives:
+
+                            css
+                            Copy code
+                            @tailwind base;
+                            @tailwind components;
+                            @tailwind utilities;
+                            This ensures Tailwind's base styles, components, and utility classes are included in your
+                            project.</li>
+
+                        <li class="text-gray-500">4. Build Tailwind CSS:
+                            To generate your CSS with Tailwind, you need to set up a build process. You can use a tool
+                            like PostCSS to compile your CSS:
+
+                            Install PostCSS and autoprefixer:
+
+                            bash
+                            Copy code
+                            npm install -D postcss autoprefixer
+                            Create a postcss.config.js file with the following configuration:
+
+                            js
+                            Copy code
+                            module.exports = {
+                            plugins: {
+                            tailwindcss: {},
+                            autoprefixer: {},
+                            },
+                            };
+                            Add a build script in package.json:
+
+                            json
+                            Copy code
+                            "scripts": {
+                            "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+                            }
+                            This will build the Tailwind CSS file and watch for any changes in your CSS files.</li>
+
+                        <li class="text-gray-500">5. Start Developing:
+                            Now, you can start your development process and use Tailwind CSS utility classes in your
+                            HTML files.</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li class="text-gray-800">npx tailwindcss init
+            <ol class="list-decimal pl-6 space-y-2">
+                <li class="text-gray-800">
+                    Running npx tailwindcss init creates a default configuration file for Tailwind CSS, which allows you
+                    to customize various settings like themes, colors, breakpoints, and more.
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li class="text-gray-800">Steps:
+                            Open your terminal and navigate to the root directory of your project.
+
+                            Run the following command:
+
+                            bash
+                            Copy code
+                            npx tailwindcss init
+                            This will create a tailwind.config.js file in your project.
+                        </li>
+                        <li class="text-gray-800">Example tailwind.config.js:
+                            After running the command, the default file will look something like this:
+
+                            js
+                            Copy code
+                            /** @type {import('tailwindcss').Config} */
+                            module.exports = {
+                            content: [],
+                            theme: {
+                            extend: {},
+                            },
+                            plugins: [],
+                            }
+                        </li>
+                        <li class="text-gray-800">Key Sections:
+                            content: This is where you specify which files Tailwind should scan to generate the
+                            necessary CSS. You will need to add your file paths here.
+
+                            Example:
+
+                            js
+                            Copy code
+                            content: [
+                            './src/**/*.html',
+                            './src/**/*.js',
+                            ],
+                            theme: This allows you to customize the default Tailwind theme (such as colors, fonts, and
+                            spacing).
+
+                            extend: Use this to extend or override the default theme with custom values.
+
+                            plugins: You can add additional Tailwind CSS plugins here.
+
+                            Example Configuration:
+                            Here’s an example configuration with some custom colors and paths for Tailwind to scan:
+
+                            js
+                            Copy code
+                            module.exports = {
+                            content: [
+                            './src/**/*.html',
+                            './src/**/*.js',
+                            ],
+                            theme: {
+                            extend: {
+                            colors: {
+                            customBlue: '#1e40af',
+                            customYellow: '#fbbf24',
+                            },
+                            },
+                            },
+                            plugins: [],
+                            }
+                            Now Tailwind will watch the files in the specified content paths and build your CSS based on
+                            the utility classes used in those files.</li>
+                    </ol>
+                </li>
+            </ol>
+
+        </li>
+
+        <li class="text-gray-800">npx tailwindcss -i ./src/input.css -o ./src/output.css --watch</li>
+    </ol>
+    </div>
+    <button
+        class="bottom-auto bg-teal-300 p-2 m-2 rounded hover:bg-teal-500 hover:text-red-900 hover:font-bold text-2xl text-red-500">Click
+        Here.</button>
+</body>
+
+</html>
