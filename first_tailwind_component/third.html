@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/third_output.css">
+  <title>Third</title>
+</head>
+
+<body class="bg-gray-200 h-screen">
+
+  <h1 class="text-3xl font-bold text-center mb-6">Tailwind CSS Classes</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-3">
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out  bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">transform: scale(1.05);
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-1 : scale-105</h2>
+        <p class="text-gray-700">Scales the element to 105% of its original size.</p>
+      </div>
+    </div>
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out  bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">border-radius: 0.25rem; /* 4px by
+        default
+        */
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-2 : rounded</h2>
+        <p class="text-gray-700">Rounds the corners.</p>
+      </div>
+    </div>
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">transition: all 0.3s ease-in-out; /*
+        Duration and timing function can be specified here */
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-3 : transition</h2>
+        <p class="text-gray-700">Enables transitions on all properties.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">/* No specific property needed; it's
+        used
+        with transform functions like scale */
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-4: transform</h2>
+        <p class="text-gray-700">Enables transformation for scaling.</p>
+      </div>
+    </div>
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">transition-duration: 300ms;
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-5 : duration-300</h2>
+        <p class="text-gray-700">Sets the duration of the transition to 300ms.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">transition-timing-function:
+        ease-in-out;
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-6 : ease-in-out</h2>
+        <p class="text-gray-700">Sets the timing function to ease in and out.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">&:hover {
+        transform: scale(1.05);
+        }
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-7 : hover:scale-105</h2>
+        <p class="text-gray-700">Scales the button to 105% on hover.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">box-shadow: 0 4px 6px -1px rgba(0, 0,
+        0,
+        0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-8 : shadow-md</h2>
+        <p class="text-gray-700">Applies a medium box shadow, giving the card depth.</p>
+      </div>
+    </div>
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">.container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+        gap: 24px; /* 1.5rem */
+        margin-left: 12px; /* 0.75rem */
+        margin-right: 12px; /* 0.75rem */
+        }
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-9 : grid-cols-1</h2>
+        <p class="text-gray-700">This sets the grid to have 1 column by default. On small screens, it will display one
+          item per row.</p>
+      </div>
+    </div>
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">@media (min-width: 640px) {
+        .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+        }
+        }
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-10 : sm:grid-cols-2</h2>
+        <p class="text-gray-700">This class changes the grid to 2 columns when the screen size reaches the small
+          breakpoint (typically 640px and above).
+          At this size, there will be two items per row.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">@media (min-width: 1024px) {
+        .container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+        }
+        }
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-11 : lg:grid-cols-3</h2>
+        <p class="text-gray-700">This sets the grid to 3 columns at the large breakpoint (typically 1024px and above).
+          Therefore, three items will be
+          displayed per row on larger screens.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">.container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+        gap: 24px; /* 1.5rem */
+        margin-left: 12px; /* 0.75rem */
+        margin-right: 12px; /* 0.75rem */
+        }
+
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-12 : gap-6</h2>
+        <p class="text-gray-700">This adds a gap of 1.5rem (24 pixels) between the grid items, creating space between
+          the rows and columns.</p>
+      </div>
+    </div>
+
+
+    <div
+      class="hover:scale-105  transition transform duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-slate-100 w-full h-48 flex justify-center items-center px-4">.element {
+        margin-left: 12px; /* or 0.75rem */
+        margin-right: 12px; /* or 0.75rem */
+        }
+      </div>
+      <div class="p-4">
+        <h2 class="font-bold text-xl mb-2">Class-12 : mx-3</h2>
+        <p class="text-gray-700">This applies horizontal margins of 0.75rem (12 pixels) on both the left and right sides
+          of the grid container, ensuring
+          some space from the edges of the viewport.</p>
+      </div>
+    </div>
+
+    <!-- More cards as needed -->
+  </div>
+
+</body>
+
+</html>
