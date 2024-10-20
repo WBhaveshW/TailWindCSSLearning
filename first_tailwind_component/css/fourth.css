@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h2-style {
+  @apply text-4xl leading-tight sm:font-semibold max-w-2xl;
+}
+
+@import '~font-awesome/css/font-awesome.css';
