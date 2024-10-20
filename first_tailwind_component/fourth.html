@@ -13,18 +13,161 @@
 
 <body class="bg-gray-100">
 
-  <div class="container p-6" id="faq">
-    <h2 class="h2-style">FAQ's</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 mt-6">
+  <div class="container p-6 mx-auto" id="faq">
+    <center>
+      <h2 class="h2-style">FAQ's</h2>
+    </center>
+    <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-3 custom-faq items-start">
+      <!-- FAQ-1 -->
       <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
-        <dt class="flex justify-between items-center">
-          <p class="font-semibold text-lg">Is This Question?</p>
-          <i class="fa-solid fa-angle-up"></i>
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-1">
+          <p class="font-semibold text-lg">What does the -rotate-180 class do in Tailwind CSS?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
         </dt>
-        <dd class="text-lg font-thin mt-6">coll answer</dd>
+        <dd id="q-1" class="hidden text-lg font-thin mt-6">The -rotate-180 class in Tailwind CSS applies a CSS transform
+          that rotates an element 180 degrees counterclockwise. This
+          is often used to flip icons or images upside down.</dd>
       </div>
+
+      <!-- FAQ-2 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-2">
+          <p class="font-semibold text-lg">What does the cursor-pointer class do in Tailwind CSS?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-2" class="hidden text-lg font-thin mt-6">The cursor-pointer class in Tailwind CSS changes the mouse
+          cursor to a pointer (hand icon) when hovering over an
+          element. This indicates that the element is clickable, such as a button or link.</dd>
+      </div>
+
+      <!-- FAQ-3 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-3">
+          <p class="font-semibold text-lg">What does the hidden class do in Tailwind CSS?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-3" class="hidden text-lg font-thin mt-6">The hidden class in Tailwind CSS is used to completely hide
+          an element from the page. When applied, the element will not
+          take up any space in the layout, and it will not be visible to users.</dd>
+      </div>
+
+      <!-- FAQ-4 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-4">
+          <p class="font-semibold text-lg">What does the justify-between class do in Tailwind CSS?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-4" class="hidden text-lg font-thin mt-6">The justify-between class is used in a flex container to
+          distribute space between child elements. It places the first
+          item at the start and the last item at the end, with equal space distributed between all items in between.
+        </dd>
+      </div>
+
+      <!-- FAQ-5 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-5">
+          <p class="font-semibold text-lg">What is the purpose of the aria-controls attribute in HTML?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-5" class="hidden text-lg font-thin mt-6">The aria-controls attribute is used to indicate that an
+          element controls the visibility or state of another element.
+          This is particularly useful for accessibility, allowing assistive technologies to understand relationships
+          between
+          elements.
+          </br>
+          <b class="underline">Usage:</b>
+          The value of aria-controls should be the id of the element that is being controlled. For example, it can
+          be used in a
+          button that toggles a dropdown or a modal.
+        </dd>
+      </div>
+
+      <!-- FAQ-6 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-6">
+          <p class="font-semibold text-lg">What does the items-center class do in Tailwind CSS?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-6" class="hidden text-lg font-thin mt-6">The items-center class is used in a flex or grid container to
+          vertically align child elements in the center of the
+          container along the cross axis. This is particularly useful for centering items within a row or column layout.
+        </dd>
+      </div>
+
+      <!-- FAQ-7 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-7">
+          <p class="font-semibold text-lg">What does the transition-transform class do in Tailwind CSS?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-7" class="hidden text-lg font-thin mt-6">The transition-transform class in Tailwind CSS applies a
+          smooth transition effect to the transform property of an
+          element. This means that any changes to transformation properties (like scale, rotate, translate) will animate
+          over a
+          specified duration instead of changing instantly.</dd>
+      </div>
+
+      <!-- FAQ-8 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-8">
+          <p class="font-semibold text-lg">What are the &lt;dt&gt; and &lt;dd&gt; elements in HTML?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-8" class="hidden text-lg font-thin mt-6">The
+          &lt;dt&gt; and
+          &lt;dd&gt; elements are used to create description lists. A description list is a type of list where you can
+          pair
+          terms with
+          descriptions, commonly used for glossaries or to provide details about various items.
+
+          <br>
+          <b class="underline">Usage:</b>
+          &lt;dt&gt; (Definition Term): Represents a term or name in a description list.
+          &lt;dd&gt; (Definition Description): Provides the description or explanation for the term defined by the
+          preceding
+        <dt>.
+          </dd>
+      </div>
+
+      <!-- FAQ-9 -->
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-7">
+        <dt class="cursor-pointer flex justify-between items-center" aria-controls="q-9">
+          <p class="font-semibold text-lg">What does toggling a class in JavaScript do?</p>
+          <i class="fa-solid fa-angle-up -rotate-180 transition-transform"></i>
+        </dt>
+        <dd id="q-9" class="hidden text-lg font-thin mt-6">Toggling a class in JavaScript means adding or removing a CSS
+          class from an element's class list. This is commonly done
+          to change the styling or behavior of an element when an event occurs, such as a click.
+
+          <br>
+          <b class="underline">Using classList.toggle()</b>
+          <ul style="list-style-type: disc;">
+            <li>If the specified class exists on the element, toggle() removes it.</li>
+            <li>If the class does not exist, toggle() adds it.</li>
+          </ul>
+          preceding
+        <dt>.
+          </dd>
+      </div>
+
     </div>
   </div>
 </body>
+
+<script>
+  const faqElementsClass = document.querySelector('.custom-faq');
+  const faqAllElements = faqElementsClass.querySelectorAll('dt');
+  faqAllElements.forEach(element => {
+    element.addEventListener('click', () => {
+      console.log(99);
+      const dtId = element.getAttribute("aria-controls");
+      const ddElement = document.getElementById(dtId);
+      const ddArrow = element.querySelectorAll('i')[0];
+      ddElement.classList.toggle('hidden');
+      ddArrow.classList.toggle('-rotate-180');
+    })
+  })
+
+</script>
 
 </html>
